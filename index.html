@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--
+    Zac Carpenter
+    WEB 110
+    12/1/20
+    Web Design Project - Final
+-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Computer Building 101</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>Building Computers, the Easy Way</h1>
+</header>
+
+
+<nav>   
+    <ul>    
+        <li><a href="#whatsNeeded">What You'll Need</a></li>
+        <li><a href="#parts">Parts List</a></li>
+        <li><a href="#buildGuide">Build Guide</a></li>
+    </ul>
+</nav>
+
+<section id="intro">
+    <img src="images/desktop.svg" alt="Desktop computer icon" id="desktopImg">
+
+    <p>Welcome! So, you want to build a computer? You have come to the right place.</p>
+    <p>
+        This guide will serve as a resource for building computers for gaming and workstation tasks. This guide is created with first time builders in mind, so if you have some experience pardon the tone of the instructions.
+    </p>
+</section>
+
+
+<article id="whatsNeeded">
+    <h2>What You'll Need</h2>
+
+    <p>Before we start, let’s go over a general overview of the parts required for building your pc. This is not meant to be a comprehensive list, instead covering the necessary parts and a few optional components.</p> 
+
+    <ul id="list2">
+        <li>A phillips head screwdriver</li>
+        <li>Zip ties and/or twist ties for cable management</li>
+        <li>Thermal paste (although stock coolers usually have this pre-applied)</li>
+        <li>A workspace, a table or counter will work. Try not to work on a carpeted area as this could create a static discharge and damage components</li>
+        <li>Something to hold your screws</li>
+        <li>Patience, a beginner can expect a 3-5 hour build</li>
+    </ul>
+
+    <p>If you are not sure about compatibility of your parts, we recommended checking out this <a href="www.pcpartpicker.com/list" alt="PCPartPicker.com">PCPartPicker</a>&copy; as a resource, where you can drag and drop parts and automatically check for compatibility. As you start your research you will notice there are a lot of component manufacturers and the purpose of this page is to help you build once you have your components.</p>
+    
+    <p><a href="#top" class="topLink">Return to the top of the page</a></p>
+</article>
+
+<article id="parts">
+    <h2>Parts List</h2>
+
+    <p id="p1">Every computer will need the items listed in the Required Parts list below, and many will also have items in the Additional Parts list.</p>
+
+    
+    <picture>
+        <img src="images/cpuIcon.svg" alt="CPU Icon" class="icons">
+        <img src="images/fan.svg" alt="Fan Icon" class="icons">
+    </picture>
+
+    <table id="table">
+        <thead>
+            <th>Required Parts</th>
+            <th>Additional Parts</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>CPU</td>
+                <td>Discrete Graphics Card (GPU)</td>
+            </tr>
+
+            <tr>
+                <td>Motherboard</td>
+                <td>Additional Cooling (Case fans or Water Cooler)</td>
+            </tr>
+
+            <tr>
+                <td>CPU Cooler</td>
+                <td>Additional Storage</td>
+            </tr>
+
+            <tr>
+                <td>Memory (RAM)</td>
+                <td>Optical Drive (DVDs/CDs/Blu-Ray/etc.)</td>
+            </tr>
+            
+            <tr>
+                <td>Power Supply (PSU)</td>
+                <td>LED/RGB Lighting Strips</td>
+            </tr>
+
+            <tr>
+                <td>Storage (HDD or SSD)</td>
+                <td>Monitor</td>
+            </tr>
+
+            <tr>
+                <td>Case</td>
+                <td>Keyboard/Mouse</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <picture>
+        <img src="images/motherboard.svg" alt="Motherboard Icon" class="icons">
+        <img src="images/graphics-card.svg" alt="GPU Icon" class="icons">
+    </picture>
+
+    <section class="row">
+        <p class="column">You will most likely start with selecting a CPU brand. There are two main companies on the market at the time of writing: AMD&reg; and Intel&reg;. Depending on which you choose, that will determine your motherboard socket. This is very important as you cannot mix and match the socket types. However, all the other components can be checked for <a href="www.pcpartpicker.com/list" alt="PCPartPicker.com">compatibility</a> but should work with both brands.</p>
+
+        <p class="column">
+            <picture>
+                <img src="images/msWindowsIcon.png" alt="Windows icon" id="windowsIcon">
+            </picture>
+        Finally, you will need a copy of Windows in order to boot and install when you’re finished assembling. We are building a Windows system, if you are looking to install Linux then check out our additional resources page.
+        There are a couple ways to obtain a bootable Windows drive: either via purchase or accessing this <a href="https://www.microsoft.com/en-us/software-download/windows10" alt="Microsoft Windows 10 Software download">web page</a> to create your own disc image*. Don’t stress too much, this is the easiest part of the build process. Next section we’ll jump into the first steps of the build!  
+        </p>
+
+    </section>
+
+    <p class="warning">*Note you will still need a product key to activate your Windows install.</p>
+
+    
+    <a href="#top" class="topLink">Return to the top of the page</a>
+</article>
+
+<article id="buildGuide">
+    
+    <h2>Build Guide</h2>
+
+    <picture>
+        <img src="images/editIcon.png" alt="Build Guide icon" id="editIcon">
+    </picture>
+    
+    <ol>
+        <li>The first step involves case preparation. You will want to begin by removing any side panels, back panels, and front panels. This will allow you to easily route cables later. Additionally, you'll want to install your motherboard standoffs at this point. These standoff go in a specific place so refer to your motherboard and case manuals to determine placement. You should be able to thumb screw these, or find an appropriate screwdriver.</li>
+
+
+        <li>Next you want to begin motherboard prep. I recommend removing your motherboard from the anti-static sleeve and place the sleeve on top of the motherboard box, then simply place your motherboard on top of the box. This gives you a solid surface to begin installing your components.</li>
+
+
+
+        <li>Now we begin connecting components to the motherboard. Starting with the CPU. You'll want to release the tension lever so you can insert the CPU into the socket. Pay close attention to your CPU, there will be a small triangle that you want to align with the triangle on the motherboard socket.* Once you determine the correct positiong placing the CPU in the socket is easy as the CPU will settle into the socket under its own weight, no need to force it.</li>
+
+        <p class="warning">*Refer to your motherboard manual if you are unsure of how to insert the CPU in the socket.</p>
+
+
+        <li>Installing the CPU cooler is next. You will start by mounting the bracket, refer to your motherboard manual for specifics regarding bracket placement. If you are using a stock cooler it may come with paste pre-applied, otherwise you will need to apply a pea-sized drop of thermal paste to the CPU before installing the cooler.</li>
+
+
+        <li>Now is a good time to install your memory (RAM). Refer to your motherboard manual to determine which DIMM slot to insert your RAM into. Use the picture below for reference. Typically, if you are using two sticks, there will be a DIMM slot in between them. Simply line up the cutout in the memory module with the motherboard and snap into place.</li>
+
+        <picture>
+            <source 
+                media="(min-width: 1000px)"
+                sizes="60vw"
+                srcset="images/dimmSlots200.jpg 200w,
+                        images/dimmSlots400.jpg 400w,
+                        images/dimmSlots600.jpg 600w,
+                        images/dimmSlots1000.jpg 1000w">
+        
+            <img 
+                src="images/dimmSlots400.jpg" alt="RAM Installation Reference"
+                sizes="(min-width: 200px) 60vw, 100vw"
+                srcset="images/dimmSlots200.jpg 200w,
+                        images/dimmSlots400.jpg 400w,
+                        images/dimmSlots600.jpg 600w,
+                        images/dimmSlots1000.jpg 1000w"
+                id="dimm">
+        </picture>
+
+
+        <li>Depending on the type of storage you have, you may want to install this now. For example, if you have an m.2 SSD, this is installed directly on the motherboard. Otherwise, you will install a traditional HDD or 2.5" SSD drive later.</li>
+
+
+        <li>It's finally time to insert the motherboard into the case. Ensure that if your motherboard has an I/O shield you insert that into the back of the case now. Align the motherboard with the standoffs that were screwed into the case earlier and gently place it on the standoffs. Begin screwing the motherboard down, be careful not to overtighten the screws and cause damage to the board.</li>
+
+
+        <li>Now you can install your power supply, your case may feature a shroud or simply have a bracket for installation. Attach the PSU to the case so you can begin routing cables. At this step you may also want to install your HDD or SSD to the corresponding bracket or drive shroud.</li>
+
+
+        <li>Installing the graphics card is similar to installing your RAM. You will typically install in the PCIE slot closest to the CPU. Be sure to remove the case brackets first, then slot the card in the motherboard.</li>
+
+        <picture>
+            <source 
+                media="(min-width: 1280px)"
+                sizes="60vw"
+                srcset="images/graphicsCard240.png 240w,
+                        images/graphicsCard480.png 480w,
+                        images/graphicsCard640.png 640w,
+                        images/graphicsCard1280.png 1280w">
+        
+            <img 
+                src="images/graphicsCard480.png" alt="Examle of a Graphics Card"
+                sizes="(min-width: 240px) 60vw, 100vw"
+                srcset="images/graphicsCard240.png 240w,
+                        images/graphicsCard480.png 480w,
+                        images/graphicsCard640.png 640w,
+                        images/graphicsCard1280.png 1028w"
+                id="gpu">
+        </picture>
+
+
+        <li>Finally, it's time to plug in all the cables to the motherboard. Consult your PSU and motherboard manuals to determine where the cables will be plugged in. Additionally, take this time to implement some cable management. At this point, you can replace any side panels on the case and turn on the computer.</li>
+
+
+        <li>With the computer connected to a monitor, you should see the POST screen, which indicates a successful build. If you do not see this scree, refer to your motherboard manual to ensure that all power cables are connected to the motherboard, PSU, and graphics card. Review each step and ensure that you did not forget to plug something in. If you reach POST, then you should be able to begin your install of Windows. Insert your USB drive with the copy of Windows and start installation. Congratulations, you just built your first computer!</li>
+
+    </ol>
+
+    <p id="showcaseBuild">Here is a little showcase of my current build</p>
+
+    <iframe width="320" height="256" src="https://www.youtube.com/embed/HM3Hz2J-BUw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p><a href="#top" class="topLink">Return to the top of the page</a></p>
+</article>
+
+
+
+<form action="/feedback.php" method="POST">
+    <fieldset class="row">
+
+
+        <section class="column">
+        <legend>Questions or Concerns? Feel free to sign up for our mailing list below</legend>
+
+        <p>Did you find this guide helpful?</p>
+            <ul class="form">
+                <li><label><input type="radio" name="feedback" value="notHelpful">Not Helpful</label></li>
+                <li><label><input type="radio" name="feedback" value="somewhatHelpful">Somewhat Helpful</label></li>
+                <li><label><input type="radio" name="feedback" value="veryHelpful">Very Helpful</label></li>
+            </ul>
+
+        </section>
+        
+        <section class="column">
+        <legend>Contact Us or Sign Up for Our Mailing List:</legend>
+            <ul class="form">
+                <li><label for="form-name">Name:</label> <input type="text" name="fullname" id="form-name"></li>
+                <li><label for="form-email">Email:</label> <input type="email" name="emailaddress" id="form-email"></li>
+                <li><label for="form-comments">Questions or Comments:</label> <br> <textarea name="comments" id="form-comments" placeholder="Enter your comments or questions here. 400 character limit."></textarea></li>
+            </ul>
+        </section>
+
+    </fieldset>
+    <p><a href="#top" class="topLink">Return to the top of the page</a></p>
+</form>
+
+
+</body>
+</html>

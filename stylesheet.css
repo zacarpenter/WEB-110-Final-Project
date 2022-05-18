@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Zac Carpenter */
+
+html {
+    background-color: #FCBA12;
+    font-size: 100%;
+    color: #090934;
+    overflow-wrap: break-word;
+}
+
+body {
+    line-height: 1.5em;
+    list-style-position: inside;
+    padding: 1em 1em 1em 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #090934;
+}
+
+a:visited {
+    color: #1414B8;
+}
+
+a:focus, a:hover {
+    color: #2E2FE3;
+    background-color: #F7EDD4;
+}
+
+a:active{
+    color: #5D5DE9;
+    background-color: #F7EDD4;
+}
+
+
+header h1 {
+    font-size: 70px;
+    line-height: 75px;
+    z-index: 2;
+    text-shadow: 0 .1em .1em #000;
+}
+
+header {
+    background: url(../images/circuitBackground.jpg) top center no-repeat;
+    max-width: 100%;
+    max-height: 750px;
+    background-size: cover;
+    padding: 10%;
+    min-width: 25%;
+    z-index: 2;
+    color: antiquewhite;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+
+#desktopImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+nav a {
+    display: inline;
+    padding: 10px;
+    background-color: #F7EDD4;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+nav li {
+    float: left;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F7EDD4;
+}
+
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+
+li a:hover {
+    background-color: #090934;
+    color: #FCBA12;
+}
+
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: .2em .2em .3em silver;
+    text-align: right;
+    padding: .5em;
+    /*clear: right;*/
+}
+
+
+#whatsNeeded {
+    text-align: center;
+    list-style-position: inside;
+    margin: 5%;
+    padding: 1em;
+    background-color: #F7EDD4;
+    border-radius: 3em;
+    border: double 10px #090934;
+}
+
+#parts {
+    margin: 5%;
+    text-align: center;
+}
+
+.icons {
+    max-width: 200px;
+    height: auto;
+    display: inline;
+    padding: 10px;
+}
+
+#windowsIcon {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 1em 1em 0;
+    float: left;
+}
+
+a.topLink {
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* Paragraph Styling */
+
+#intro p {
+    line-height: 2.1rem;
+    font-size: 1.5rem;
+    padding: 1em 1em 1em 1em;
+}
+
+#whatsNeeded p {
+    text-align: left;
+    text-align-last: left;
+    padding: .5em;
+}
+
+#parts p {
+    text-align: left;
+    padding: .5em;
+}
+
+p.warning {
+    font-size: small;
+    color: #2E2FE3;
+}
+
+
+
+/* List Styling */
+
+
+#whatsNeeded ul {
+    text-align: left;
+    padding: 0.5em;
+    list-style: none;
+}
+
+#list2 li:before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-size: 25px;
+    background-image: url(../images/cpuIcon.svg);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+
+
+
+/* Table Styling */
+
+#table {
+    text-align: right;
+    table-layout: auto;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+th {
+    text-align: right;
+
+}
+
+th, td {
+    border-bottom: 1px solid #090934;
+    padding: 15px;
+}
+
+
+
+/* Build Guide section */
+
+#buildGuide {
+    text-align: left;
+    margin: 2%;
+    padding: 1em 1em 1em 1em;
+    line-height: 1.5rem;
+    background-color: #F7EDD4;
+    border-radius: 3em;
+    border: double 10px #090934;
+}
+
+#buildGuide li {
+    padding: 1rem 1rem 1rem 1rem;
+    list-style-position: inside;
+}
+
+
+#dimm {
+    display: inline-block;
+	margin: 0 10% 0 10%;
+	border: solid 3px #000;
+}
+
+#gpu {
+    display: inline-block;
+    margin: auto;
+}
+
+#editIcon {
+    z-index: 2;
+    max-width: 250px;
+    float: left;
+    -webkit-shape-outside: circle(130px);
+    shape-outside: circle(130px);
+    padding: 10px;
+}
+
+#showcaseBuild{
+    text-transform: capitalize;
+    font-size: larger;
+    color: #2E2FE3;
+    line-height: 2;
+    text-align: center;
+    text-decoration: overline;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+
+/* Form section */
+
+ul.form {
+    list-style: none inside;
+    list-style-position: outside;
+    border-radius: .5em;
+    border: solid #090934;
+    padding: 1em 1em;
+}
+
+#form-name, #form-email {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none
+}
+
+/*
+media query changes anything for under 600px
+*/
+
+.column {
+    /*flex: 50%;*/
+    text-align: left;
+    text-align-last: left;
+    padding: 2%;
+    width: 100%;
+    float: left;  
+}
+
+.row {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 37px;
+    }
+
+    h2 {
+        line-height: 1em;
+    }
+
+    #table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid rgb(0, 0, 0);
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    th, tbody {
+        text-align: left;
+        font-size: .8rem;
+    }
+
+    a.topLink {
+        line-height: 2rem;
+        clear: left;
+        font-size: 1.2rem;
+    }
+
+    #editIcon {
+        z-index: 2;
+        max-width: 150px;
+        float: left;
+        -webkit-shape-outside: circle(130px);
+        shape-outside: circle(130px);
+        padding: 10px;
+    }
+    
+
+    iframe {
+        width: 100%;
+    }
+}
